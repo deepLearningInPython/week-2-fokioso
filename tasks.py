@@ -24,8 +24,8 @@ def my_mlp(w, X, sigma=np.tanh):
    a1 = sigma(X.dot(W1))  #   input -> layer 1
    a2 = sigma(a1.dot(W2)) # layer 1 -> layer 2
    f  = sigma(a2.dot(W3)) # layer 2 -> output
-
-    return f
+   
+   return f
 # -----------------------------------------------
  
 # Task 2:
