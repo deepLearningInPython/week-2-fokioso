@@ -39,7 +39,8 @@ def my_mlp(w, X, sigma=np.tanh):
 # Copy and paste the code for that function here:
 # -----------------------------------------------
 def MSE_func(w, X, y): # give the appropriate name and arguments
-
+    f = my_mlp(w, X)
+    MSE = np.sum((f - y)**2)
     return MSE
 # -----------------------------------------------
  
