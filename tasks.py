@@ -18,6 +18,12 @@ from sklearn import datasets
 # Copy and paste the code for that function here:
 # -----------------------------------------------
 def my_mlp(w, X, sigma=np.tanh):
+   W1 = np.array(w[0])  
+   W2 = np.array(w[1])
+   W3 = np.array(w[2])
+   a1 = sigma(X.dot(W1))  #   input -> layer 1
+   a2 = sigma(a1.dot(W2)) # layer 1 -> layer 2
+   f  = sigma(a2.dot(W3)) # layer 2 -> output
 
     return f
 # -----------------------------------------------
